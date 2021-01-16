@@ -1,0 +1,157 @@
+Supplychain to control the authenticity of coffe beans,  from the farmer to the consumer.
+
+Test the code just run: npm test
+
+To run the app inside project6 folder: npm run dev
+
+Steps/workflow to execute the frontend app:
+
+The buttons 'Fetch data 1' and 'Fetch Data 2' uses the upc number given in the input, to get the info of the product. See the results in the console of the browser.
+
+The user can set the FarmerID address on Input, and then push the buttons in order: harvest, process, pack and ForSale. That address needs to be connected on metamask.
+
+After that, the Distributor can Buy and Ship, with the address on the input and connected to metamask.
+The retailer can Receive.
+And finally the Consumer can Purchase.
+
+
+Account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+Supply chain contract address:    0xf4B354Af4Afa32a919449af0310Dafde6Bf6a37c
+Supply chain transaction hash:    0x1c9aab9f8288ca40cbb7bc31b7f7e9ea6f3e4223306291ee1f52214288d29058
+
+Truffle version: v5.1.48
+Node version: v10.11.0
+Web3 version: 0.20.7
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\coffeeaccesscontrol\ConsumerRole.sol
+> Compiling .\contracts\coffeeaccesscontrol\DistributorRole.sol
+> Compiling .\contracts\coffeeaccesscontrol\FarmerRole.sol     
+> Compiling .\contracts\coffeeaccesscontrol\RetailerRole.sol   
+> Compiling .\contracts\coffeeaccesscontrol\Roles.sol
+> Compiling .\contracts\coffeecore\Ownable.sol
+> Artifacts written to C:\Users\roque\Documents\Blockchain workspace\nd1309-Project-6b-Example-Template\project-6\build\contracts
+> Compiled successfully using:
+   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x0bda53c836df88024bc7c738761a687aadaaf016006a6992cccb0a132dd94d39
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x87899f1496A65A2Fd07B79660e5F68ab75AC0223
+   > block number:        7904798
+   > block timestamp:     1610799853
+   > account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+   > balance:             20.4536895355999
+   > gas used:            225237 (0x36fd5)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00225237 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00225237 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'FarmerRole'
+   ----------------------
+   > transaction hash:    0x263f6424049494155d1485571d68f62338d46b0a71d44f3a2d1b48487e47ceb3
+   > Blocks: 1            Seconds: 9
+   > contract address:    0xa9e6d6F8062B38eb139F6807E63538b16B6A5aB9
+   > block number:        7904800
+   > block timestamp:     1610799883
+   > account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+   > balance:             20.4502050655999
+   > gas used:            306084 (0x4aba4)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00306084 ETH
+
+
+   Replacing 'DistributorRole'
+   ---------------------------
+   > transaction hash:    0x180b4e14b3da95154a9a7a931b5cc174efa26cd93db1c7ae33979c55ad4c96dd
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x956685Dc8183D0b3Ee1feD1209c557A4a5d122b5
+   > block number:        7904801
+   > block timestamp:     1610799898
+   > account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+   > balance:             20.4469224055999
+   > gas used:            328266 (0x5024a)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328266 ETH
+
+
+   Replacing 'RetailerRole'
+   ------------------------
+   > transaction hash:    0x391212c051c6ef4d6272824dc7e39c0c0dfc65727aa33a16143ad7498bdf0ae8
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x12F390c19a27099ba5824F3e89F50845292daf6f
+   > block number:        7904802
+   > block timestamp:     1610799913
+   > account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+   > balance:             20.4436385455999
+   > gas used:            328386 (0x502c2)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328386 ETH
+
+
+   Replacing 'ConsumerRole'
+   ------------------------
+   > transaction hash:    0x5281f551ca71f1856b5c2b601ecff600f2ffe5c8ac9cd911d471024c896ea407
+   > Blocks: 1            Seconds: 13
+   > contract address:    0x3Fe7026C4B9b2704936A8427Ac5f41e3494dd47e
+   > block number:        7904803
+   > block timestamp:     1610799928
+   > account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+   > balance:             20.4403546855999
+   > gas used:            328386 (0x502c2)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00328386 ETH
+
+
+   Replacing 'SupplyChain'
+   -----------------------
+   > transaction hash:    0x1c9aab9f8288ca40cbb7bc31b7f7e9ea6f3e4223306291ee1f52214288d29058
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xf4B354Af4Afa32a919449af0310Dafde6Bf6a37c
+   > block number:        7904804
+   > block timestamp:     1610799943
+   > account:             0x35862355b3AC1A1d673aD99d9ACACd914D54eBe0
+   > balance:             20.4125957555999
+   > gas used:            2775893 (0x2a5b55)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02775893 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04067015 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.04292252 ETH
