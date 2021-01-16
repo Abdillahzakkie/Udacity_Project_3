@@ -74,4 +74,4 @@ npm run dev
 
 ## Author
 
-Roque Orts Campos
+Abdulah Zakariyya
