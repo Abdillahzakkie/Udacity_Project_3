@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "truffle": "^5.1.59"
+    "truffle": "^5.11.5"
   }
 }
